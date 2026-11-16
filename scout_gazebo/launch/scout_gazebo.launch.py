@@ -67,7 +67,11 @@ def generate_launch_description():
         arguments=[
             "/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist",
             "/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry",
-            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"
+            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+            "/model/scout_v2/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V"
+        ],
+        remappings=[
+            ("/model/scout_v2/tf", "/tf")
         ],
         output="screen"
     )

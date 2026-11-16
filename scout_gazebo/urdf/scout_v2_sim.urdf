@@ -158,4 +158,20 @@
       <odom_publish_frequency>30</odom_publish_frequency>
     </plugin>
   </gazebo>
+  <gazebo reference="front_left_wheel_link">
+    <mu1>0.9</mu1>
+    <mu2>0.7</mu2>
+  </gazebo>
+  <gazebo reference="front_right_wheel_link">
+    <mu1>0.9</mu1>
+    <mu2>0.7</mu2>
+  </gazebo>
+  <gazebo reference="rear_left_wheel_link">
+    <mu1>0.9</mu1>
+    <mu2>0.7</mu2>
+  </gazebo>
+  <gazebo reference="rear_right_wheel_link">
+    <mu1>0.9</mu1>
+    <mu2>0.7</mu2>
+  </gazebo>
 </robot>
