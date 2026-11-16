@@ -69,11 +69,13 @@ def generate_launch_description():
             "/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry",
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
             "/model/scout_v2/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V",
-            "/scout_joint_states@sensor_msgs/msg/JointState[gz.msgs.Model"
+            "/scout_joint_states@sensor_msgs/msg/JointState[gz.msgs.Model",
+            "/hesai/points/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
         ],
         remappings=[
             ("/model/scout_v2/tf", "/tf"),
-            ("/scout_joint_states", "/joint_states")
+            ("/scout_joint_states", "/joint_states"),
+            ("/hesai/points/points", "/hesai/points"),
         ],
         output="screen"
     )
