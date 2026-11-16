@@ -68,10 +68,12 @@ def generate_launch_description():
             "/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist",
             "/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry",
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
-            "/model/scout_v2/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V"
+            "/model/scout_v2/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V",
+            "/scout_joint_states@sensor_msgs/msg/JointState[gz.msgs.Model"
         ],
         remappings=[
-            ("/model/scout_v2/tf", "/tf")
+            ("/model/scout_v2/tf", "/tf"),
+            ("/scout_joint_states", "/joint_states")
         ],
         output="screen"
     )
